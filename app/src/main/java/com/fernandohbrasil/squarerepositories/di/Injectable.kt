@@ -1,0 +1,3 @@
+package com.fernandohbrasil.squarerepositories.di
+
+interface Injectable

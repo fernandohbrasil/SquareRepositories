@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+<!--    Dark-->
+<!--    <color name="gradient_start">#2d3436</color>-->
+<!--    <color name="gradient_end">#BD000000</color>-->
+<!--    <color name="font_color">#FFFFFF</color>-->
+
+    <color name="gradient_start">#BDFFFFFF</color>
+    <color name="gradient_center">#BDB3B3B3</color>
+    <color name="gradient_end">#BD737373</color>
+
+    <color name="font_color">#000000</color>
+    <color name="anti_font_color">#FFFFFF</color>
+</resources>

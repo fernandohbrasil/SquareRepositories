@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SquareRepositories</string>
+    <string name="error_message">It was not possible to load your data.</string>
+    <string name="error_instruction">Please, check your connection and  try to swipe down to reload!</string>
+
+    <string name="language">Language: %1$s</string>
+    <string name="updated_at">Updated at: %1$s</string>
+    <string name="created_at">Created at: %1$s</string>
+    <string name="watchers">Watchers: %1$s</string>
+    <string name="starred">Starred: %1$s</string>
+    <string name="forks">Forks: %1$s</string>
+</resources>

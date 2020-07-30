@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x_small"
+        app:cardCornerRadius="@dimen/medium"
+        app:cardElevation="@dimen/small"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium">
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toTopOf="@id/tvDescription"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="1250000" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/medium"
+                android:ellipsize="end"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/tvId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvId"
+                app:layout_constraintTop_toTopOf="@id/tvId"
+                tools:text="Project Name" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:ellipsize="end"
+                android:textColor="@color/font_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvName"
+                tools:text="Description" />
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:ellipsize="end"
+                android:textColor="@color/font_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription"
+                tools:text="Language: Java" />
+
+            <TextView
+                android:id="@+id/tvCreate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:text="@string/created_at"
+                android:textColor="@color/font_color"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpdate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLanguage" />
+
+            <TextView
+                android:id="@+id/tvUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/updated_at"
+                android:textColor="@color/font_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvCreate"
+                app:layout_constraintTop_toTopOf="@id/tvCreate" />
+
+            <TextView
+                android:id="@+id/tvWatchers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:drawableStart="@drawable/ic_eye"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_color"
+                app:layout_constraintEnd_toStartOf="@id/tvStars"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCreate"
+                tools:text="Watchers: 0" />
+
+            <TextView
+                android:id="@+id/tvStars"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_star"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/tvWatchers"
+                app:layout_constraintEnd_toStartOf="@id/tvForks"
+                app:layout_constraintStart_toEndOf="@id/tvWatchers"
+                app:layout_constraintTop_toTopOf="@id/tvWatchers"
+                tools:text="Starred: 0" />
+
+            <TextView
+                android:id="@+id/tvForks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_fork"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@+id/tvWatchers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvStars"
+                app:layout_constraintTop_toTopOf="@id/tvWatchers"
+                tools:text="Forks: 0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
